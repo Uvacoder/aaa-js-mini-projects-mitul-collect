@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong!</title>
+</head>
+<body>
+
+    <canvas id="game" width="640" height="480"></canvas>
+    <script>
+    var paddleOne = 40;
+    var paddleTwo = 40;     
+    var paddleThick = 10;
+    var paddleHeight = 100;
+    var ballX = 50;
+    var ballY = 50;
+    var ballDimension = 5;
+    var xv = 4;
+    var yv = 4;
+    var scoreOne = 0;
+    var scoreTwo = 0;
+    var AIspeed = 2;
+        
+        window.onload = function() {
+            game = document.getElementById("game");
+            context = game.getContext('2d');
+            setInterval(update, 1000/30);
+            game.addEventListener('mousemove', function(event){
+                paddleOne = event.clientY - paddleHeight / 2;
+            });
+        }
+        
+        function reset(){
+            ballX = game.width / 2;
+            ballY = game.height / 2;
+            xv=-xv;
+            yv = 3;   
+        }
+        
+        
+        function update(){
+            ballX+=xv;
+            ballY+=yv;
+            
+            if(ballY < 0 && yv < 0){
+                yv=-yv;
+            }
+            
+            if(ballY > game.height && yv > 0){
+                yv=-yv;
+            }
+            
+            if(ballX < 0){
+                if(ballY > paddleOne && ballY < paddleOne + paddleHeight){
+                    xv=-xv;
+                    var deltaY = ballY - (paddleOne + paddleHeight / 2);
+                    yv = deltaY * 0.3;
+                } else {
+                    scoreTwo++;
+                    reset();
+                }
+            }
+            
+            if(ballX > game.width){
+                if(ballY > paddleTwo && ballY < paddleTwo + paddleHeight){
+                    xv=-xv;
+                    var deltaY = ballY - (paddleTwo + paddleHeight / 2);
+                    yv = deltaY * 0.3;
+                } else {
+                    scoreOne++;
+                    reset();
+                }
+            }
+            
+            if(paddleTwo + paddleHeight / 2 < ballY) {
+                paddleTwo+=AIspeed;
+            } else {
+                paddleTwo-=AIspeed;
+            }
+            
+            context.fillStyle = 'black';
+            context.fillRect(0, 0, game.width, game.height);
+            context.fillStyle = 'ghostwhite';
+            context.fillRect(0, paddleOne, paddleThick, paddleHeight);
+            context.fillRect(game.width - paddleThick, paddleTwo, paddleThick, paddleHeight);
+            context.fillRect(ballX - ballDimension / 2, ballY - ballDimension / 2, ballDimension, ballDimension);
+            context.fillText(scoreOne, 100, 100);
+            context.fillText(scoreTwo, game.width - 100, 100);
+            
+        }
+        
+    </script>
+
+</body>
+</html>
