@@ -1,6 +1,6 @@
 * {
-	margin: 0;
-	padding: 0;
+	margin: 0 auto;
+	padding: 0px;
 }
 
 body {
@@ -27,4 +27,8 @@ td {
 
 .fruit {
 	background-color: ghostwhite;
+}
+
+.title {
+	color: ghostwhite;
 }
