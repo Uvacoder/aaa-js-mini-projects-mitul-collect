@@ -1,7 +1,8 @@
 //Settings for Snake
 var snakeX = 2, snakeY = 2;
 var height = 30, width = 30;
-var interval = 100, increment = 4;
+var interval = 100;
+var increment = 4;
 
 
 // Game variables
@@ -91,8 +92,18 @@ function update(){
 	else if(direction == 1){snakeX--;}
 	else if(direction == 2){snakeX++;}
 	set(snakeX, snakeY, "snake");
-	if(snakeX == 0 || snakeX == width - 1 || snakeY == 0 || snake == height - 1){gameOver = true;}
-	else if(snakeX == fX && snakeY == fY){
+	for(var i = tailX.length - 1; i >= 0; i--){
+		if(snakeX == tailX[i] && snakeY == tailY[i]){
+			gameOver = true;
+			alert("game over");
+			break;
+		}
+	}
+	if(snakeX == 0 || snakeX == width - 1 || snakeY == 0 || snakeY == height - 1){
+		gameOver = true;
+		alert("game over");
+	}
+	if(snakeX == fX && snakeY == fY){
 		createFruit();
 		length+=increment;
 		score+=4;
