@@ -1,0 +1,51 @@
+/* line 1, /Users/mitulshah/Desktop/Wesbites/Other/Online Classes/miniprojects/filterlist/styles/style.scss */
+html, body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica', sans-serif; }
+
+/* line 6, /Users/mitulshah/Desktop/Wesbites/Other/Online Classes/miniprojects/filterlist/styles/style.scss */
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto; }
+
+/* line 12, /Users/mitulshah/Desktop/Wesbites/Other/Online Classes/miniprojects/filterlist/styles/style.scss */
+#filter {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 15px;
+  border: none;
+  border-bottom: 2px solid lightseagreen;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px; }
+
+/* line 24, /Users/mitulshah/Desktop/Wesbites/Other/Online Classes/miniprojects/filterlist/styles/style.scss */
+a {
+  text-decoration: none;
+  color: #141414; }
+
+/* line 29, /Users/mitulshah/Desktop/Wesbites/Other/Online Classes/miniprojects/filterlist/styles/style.scss */
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+/* line 33, /Users/mitulshah/Desktop/Wesbites/Other/Online Classes/miniprojects/filterlist/styles/style.scss */
+li.collection-item {
+  padding-top: 10px;
+  background-color: ghostwhite;
+  margin-bottom: 10px;
+  height: 30px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+/* line 42, /Users/mitulshah/Desktop/Wesbites/Other/Online Classes/miniprojects/filterlist/styles/style.scss */
+.collection-header {
+  color: lightseagreen;
+  font-size: 2em;
+  line-height: 0px;
+  text-align: center;
+  margin-bottom: 0px; }
+
+/*# sourceMappingURL=style.css.map */
