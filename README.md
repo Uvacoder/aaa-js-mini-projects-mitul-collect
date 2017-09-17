@@ -3,6 +3,11 @@
 Mini JavaScript that I completed in my spare time to improve my JavaScript skills and knowledge. Read about the projects below and click the link to view a demo 👀
 
 #### View projects below
+[Filtered List](https://mitul-s.github.io/mini-projects/filterlist) 🎛️
+
+Quick project to use ES6 and practice JS. Filter through a list of contacts using the input.
+
+
 [Pong](https://mitul-s.github.io/mini-projects/pong) 🕹
 
 Quick five minute project, remake of popular game Pong.
