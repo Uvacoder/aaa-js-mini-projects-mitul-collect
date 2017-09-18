@@ -3,11 +3,6 @@
 Mini JavaScript that I completed in my spare time to improve my JavaScript skills and knowledge. Read about the projects below and click the link to view a demo 👀
 
 #### View projects below
-[Filtered List](https://mitul-s.github.io/mini-projects/filterlist) 🎛️
-
-Quick project to use ES6 and practice JS. Filter through a list of contacts using the input.
-
-
 [Pong](https://mitul-s.github.io/mini-projects/pong) 🕹
 
 Quick five minute project, remake of popular game Pong.
@@ -32,6 +27,14 @@ Remake of popular online keyboard beatmaker Patatap (Click [here](https://patata
 [Meme Generator](https://mitul-s.github.io/mini-projects/memeGenerator) 😂
 
 Create your own meme! Upload a photo and save it. Built with HTML5 Canvas.
+
+[Filtered List](https://mitul-s.github.io/mini-projects/filterlist) 🎛️
+
+Quick project to use ES6 and practice JS. Filter through a list of contacts using the input.
+
+[Weight Converter](https://mitul-s.github.io/mini-projects/weightConvert) ⚖️
+
+Suuuuper fast project, extremely simple. Just convert pounds to grams, kilos, and ounces. I should probably add speed too 🤔
 
 [To Do List](https://mitul-s.github.io/mini-projects/ToDoList) 📝
 
