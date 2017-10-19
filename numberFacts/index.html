@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Number Facts</title>
+  <style>
+    #fact {
+      display: none;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css" />
+</head>
+<body class="ui inverted black segment">
+  <div class="ui text container basic segment">
+    <div class="ui inverted teal padded segment">
+      <h1>Number Facts</h1>
+      <p>Enter a number and get a random fact</p>
+      <div class="ui fluid input">
+        <input type="number" id="numberInput" placeholder="Enter any number..." />
+      </div>
+      <div id="fact" class="ui segment">
+        <h4 class="ui header">
+            Number Fact
+        </h4>
+        <p id="factText"></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
